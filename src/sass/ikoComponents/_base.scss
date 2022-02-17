@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  text-align: left;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.darkmode {
+  --white: #000;
+  --black: #fff;
+  --light: #343a40;
+  --dark: #f5f5f5;
+  --gray: #343a40;
+  --gray-dark: #6c757d;
+}
+
+.main {
+  margin-top: var(--header-height);
+  margin-bottom: 2rem;
+  min-height: 100vh;
+
+  @include tablet {
+    margin-top: calc(var(--header-tablet-height) + 20px);
+  }
+  @include mobile {
+    margin-top: calc(var(--header-mobile-height) + 10px);
+  }
+}
+
+.grid {
+  display: grid;
+}
+
+@each $val in $colors {
+  .color-#{$val} {
+    color: var(--#{$val});
+  }
+  .bg-#{$val} {
+    background-color: var(--#{$val});
+  }
+  .border-#{$val} {
+    border: 1px solid var(--#{$val});
+  }
+}
