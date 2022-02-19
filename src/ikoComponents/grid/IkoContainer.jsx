@@ -4,7 +4,10 @@ import React from "react";
 const IkoContainer = ({ children, fluid, className, ...props }) => {
   const container = fluid ? "container-fluid" : "container";
   return (
-    <div className={`${container}${className ? " " + className : ""}`}>
+    <div
+      className={`${container}${className ? " " + className : ""}`}
+      {...props}
+    >
       {children}
     </div>
   );

@@ -1,0 +1,46 @@
+.header {
+  position: relative;
+  z-index: 9;
+
+  .container {
+    height: var(--header-height);
+  }
+
+  .iko-row {
+    height: 100%;
+    @include flex(center, space-between);
+  }
+
+  &__logo {
+    .logo {
+      font-size: 48px;
+      font-weight: 900;
+      font-size: 72px;
+      background: -webkit-linear-gradient(var(--blue-color), rgb(10, 145, 255));
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  &__right {
+    @include flex(center, flex-end);
+  }
+
+  &__menu {
+    @include flex(center, center);
+
+    &__item {
+      font-size: 18px;
+      font-weight: 400;
+      color: var(--dark);
+
+      a {
+        padding: 28px 20px;
+      }
+    }
+  }
+
+  &__darkmode {
+    padding-left: 30px;
+  }
+}

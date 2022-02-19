@@ -1,0 +1,48 @@
+.products .iko-col:hover {
+  .product {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+  }
+}
+
+.product {
+  padding: 10px 15px 5px;
+  transition: 300ms;
+
+  &__img {
+    img {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    font-size: 18px;
+    color: var(--black);
+    margin-bottom: 10px;
+  }
+
+  &__price {
+    font-size: 18px;
+    color: var(--dark);
+    margin-bottom: 5px;
+  }
+
+  &__actions {
+    opacity: 0;
+    visibility: hidden;
+    transition: 300ms;
+  }
+
+  &:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    transform: translateY(-40px);
+  }
+
+  &:hover &__actions {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.new-arrival {
+  margin-bottom: 50px;
+}

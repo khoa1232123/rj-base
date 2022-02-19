@@ -46,9 +46,9 @@ const IkoButton = ({
 
   return (
     <button className={classTxt} onClick={onClick} {...props}>
-      {icon && !iconRight ? <i className={icon}></i> : null}
+      {icon && !iconRight ? <i className={icon + " icon-left"}></i> : null}
       <span className="iko-btn__txt">{children}</span>
-      {icon && iconRight ? <i className={icon}></i> : null}
+      {icon && iconRight ? <i className={icon + " icon-right"}></i> : null}
     </button>
   );
 };

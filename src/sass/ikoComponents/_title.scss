@@ -1,9 +1,5 @@
-.title {
-  font-size: 45px;
+.iko-title {
   width: 100%;
   color: var(--black);
-
-  &__border {
-    border-bottom: 1px solid var(--black);
-  }
+  margin-bottom: 30px;
 }

@@ -11,6 +11,14 @@
     opacity: 0.8;
   }
 
+  .icon-left {
+    margin-right: 10px;
+  }
+
+  .icon-right {
+    margin-left: 10px;
+  }
+
   &-outline {
     background-color: transparent;
     color: var(--dark);

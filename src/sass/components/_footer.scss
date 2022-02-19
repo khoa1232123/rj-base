@@ -1,0 +1,63 @@
+.footer {
+  position: relative;
+  padding: 160px 0 0px;
+  background-position: top center;
+  background-size: cover;
+
+  &__wrapper {
+    position: relative;
+    padding-bottom: 50px;
+
+    .iko-row {
+      @include flex(flex-end, center);
+    }
+  }
+
+  &__img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  &__logo {
+    .logo {
+      font-size: 48px;
+      font-weight: 900;
+      font-size: 72px;
+      background: -webkit-linear-gradient(var(--blue-color), rgb(10, 145, 255));
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  &__info {
+    p {
+      line-height: 1.5;
+      font-size: 16px;
+
+      ~ p {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &__menu {
+    &__item {
+      a {
+        font-size: 16px;
+        display: block;
+        padding: 12px 0;
+      }
+    }
+  }
+
+  &__copyright {
+    background-color: var(--white);
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    &__txt {
+      text-align: center;
+    }
+  }
+}

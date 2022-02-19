@@ -1,0 +1,126 @@
+.banner-one {
+  margin-bottom: 90px;
+
+  .iko-row {
+    @include flex(center, center);
+  }
+}
+
+.banner-two {
+  padding-top: 100px;
+  background-position: center center;
+  background-size: cover;
+  margin-bottom: 90px;
+
+  .iko-row {
+    @include flex(center, center);
+  }
+
+  .banner {
+    &__content {
+      position: relative;
+      @include flex(center, center);
+    }
+    &__title {
+      color: var(--red);
+    }
+    &__desc {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.banner-three {
+  color: var(--black);
+  background-color: var(--light-gray);
+  padding: 50px 0;
+  margin-bottom: 100px;
+
+  .iko-row {
+    @include flex(center, center);
+  }
+  .banner {
+    &__content {
+      position: relative;
+      @include flex(center, center);
+    }
+
+    &__title {
+      color: var(--red);
+      text-align: center;
+      margin-bottom: 15px;
+
+      &__sub {
+        margin-bottom: 10px;
+        color: var(--black);
+        font-weight: 600;
+      }
+    }
+
+    &__desc {
+      font-size: 18px;
+      margin-bottom: 30px;
+      text-align: center;
+      color: var(--black);
+    }
+  }
+}
+
+.banner {
+  &__wrapper {
+    position: relative;
+  }
+
+  &__img {
+    img {
+      width: 100%;
+    }
+  }
+  &__content {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    @include flex(flex-start, center);
+    flex-direction: column;
+    padding: 40px;
+    color: var(--white);
+  }
+
+  &__title {
+    font-size: 48px;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+
+  &__desc {
+    margin-bottom: 10px;
+  }
+  &__btn {
+    border-radius: 50px;
+    height: 50px;
+    padding: 0 25px;
+  }
+
+  &__list {
+    margin-bottom: 30px;
+    width: 100%;
+
+    &__item {
+      &__img {
+        margin-bottom: 10px;
+        img {
+          display: block;
+          border-radius: 50%;
+          margin: auto;
+        }
+      }
+      &__title {
+        text-align: center;
+        color: var(--black);
+      }
+    }
+  }
+}

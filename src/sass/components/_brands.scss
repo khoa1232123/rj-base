@@ -1,0 +1,14 @@
+.brands {
+  margin-bottom: 90px;
+  &__list {
+    border-left: 1px solid var(--light-gray);
+    border-top: 1px solid var(--light-gray);
+    > * {
+      border-right: 1px solid var(--light-gray);
+      border-bottom: 1px solid var(--light-gray);
+    }
+  }
+  &__item {
+    text-align: center;
+  }
+}
