@@ -6,7 +6,7 @@ const Products = ({ products, col }) => {
   return (
     <IkoRow className="products">
       {products.map((item, index) => (
-        <IkoCol key={index} col={col}>
+        <IkoCol key={index} col={col ? col : 3}>
           <Product product={item} />
         </IkoCol>
       ))}

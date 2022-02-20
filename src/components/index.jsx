@@ -8,3 +8,6 @@ export { default as ListAnimal } from "./ListAnimal";
 export { default as Seperator } from "./Seperator";
 export { default as BestChoice } from "./BestChoice";
 export { default as Brands } from "./Brands";
+export { default as Products } from "./Products";
+export { default as Posts } from "./Posts";
+export { default as TitleHead } from "./TitleHead";

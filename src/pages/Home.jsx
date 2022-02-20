@@ -8,11 +8,13 @@ import {
   ListAnimal,
   NewArrival,
   Slider,
+  TitleHead,
 } from "../components";
 
 const Home = () => {
   return (
     <>
+      <TitleHead title="Home Page" />
       <Slider />
       <BannerOne />
       <NewArrival />

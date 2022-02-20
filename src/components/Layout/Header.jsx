@@ -20,7 +20,7 @@ const Header = () => {
                 <Link to="/">Home</Link>
               </li>
               <li className="header__menu__item">
-                <Link to="/blog">Blog</Link>
+                <Link to="/blogs">Blogs</Link>
               </li>
               <li className="header__menu__item">
                 <Link to="/shop">Shop</Link>

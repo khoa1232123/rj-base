@@ -1,4 +1,5 @@
 import React from "react";
+import { TitleHead } from "../components";
 import {
   IkoButton,
   IkoCol,
@@ -12,6 +13,7 @@ import map from "../imgs/map.png";
 const Contact = () => {
   return (
     <div className="contact">
+      <TitleHead title="Contact" />
       <IkoContainer>
         <IkoRow>
           <IkoCol>
@@ -20,9 +22,10 @@ const Contact = () => {
             </IkoTitle>
           </IkoCol>
         </IkoRow>
+
         <IkoRow>
           <IkoCol>
-            <div className="container__img">
+            <div className="contact__img">
               <img src={map} alt="" />
             </div>
           </IkoCol>
@@ -34,7 +37,7 @@ const Contact = () => {
             </IkoTitle>
           </IkoCol>
           <IkoCol col={7}>
-            <div className="container__txt">
+            <div className="contact__txt">
               <p>
                 A great About Us page helps builds trust between you and your
                 customers. The more content you provide about you and your
