@@ -147,6 +147,39 @@ export const posts = [
   },
 ];
 
+export const filterPostCats = [
+  {
+    label: "Advanced Analytics",
+  },
+  {
+    label: "Beauty",
+  },
+  {
+    label: "Celebrity",
+  },
+  {
+    label: "Creative",
+  },
+  {
+    label: "Culture",
+  },
+  {
+    label: "Digital",
+  },
+  {
+    label: "Fashion",
+  },
+  {
+    label: "Lifestyle",
+  },
+  {
+    label: "Mergers & Accquisitions",
+  },
+  {
+    label: "Strategy",
+  },
+];
+
 export const getAllPosts = () => posts;
 
 export const getPostById = (id) => posts.find((e) => e.id === id);
