@@ -46,3 +46,71 @@
 .new-arrival {
   margin-bottom: 50px;
 }
+
+.product-view {
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__price {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  &__form {
+    display: flex;
+    margin-bottom: 30px;
+
+    &__quantity {
+      display: flex;
+      margin-right: 20px;
+      * {
+        display: inline;
+      }
+
+      input {
+        height: 40px;
+        border: 1px solid;
+        border-radius: 4px;
+        margin: 0 10px;
+        width: 60px;
+        text-align: center;
+      }
+      &--minus,
+      &--plus {
+        height: 40px;
+        width: 40px;
+        border: 1px solid;
+        display: inline-block;
+        font-size: 0px;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 4px;
+        cursor: pointer;
+
+        i {
+          font-size: 16px;
+        }
+      }
+    }
+
+    &__btn {
+      margin-bottom: 0px;
+    }
+  }
+
+  &__categories {
+    margin-bottom: 10px;
+    &__item {
+      display: inline;
+      margin-right: 10px;
+    }
+  }
+
+  &__tags {
+    &__item {
+      display: inline;
+      margin-right: 10px;
+    }
+  }
+}

@@ -67,6 +67,31 @@ blockquote {
     text-align: center;
   }
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: disc;
+}
+
+ul,
+ol {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  li {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+}
 
 .grid {
   display: grid;

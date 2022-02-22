@@ -1,7 +1,15 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import { Layout } from "./components";
-import { About, BlogDetail, Blogs, Contact, Home } from "./pages";
+import {
+  About,
+  BlogDetail,
+  Blogs,
+  Contact,
+  Home,
+  ProductDetail,
+  Shop,
+} from "./pages";
 
 function App() {
   return (
@@ -13,6 +21,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/blogs/:id" element={<BlogDetail />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/product/:id" element={<ProductDetail />} />
         </Routes>
       </Layout>
     </BrowserRouter>

@@ -27,12 +27,15 @@
   }
 
   &__menu {
+    margin-bottom: 0;
+    list-style: none;
     @include flex(center, center);
 
     &__item {
       font-size: 18px;
       font-weight: 400;
       color: var(--dark);
+      margin-bottom: 0;
 
       a {
         padding: 28px 20px;

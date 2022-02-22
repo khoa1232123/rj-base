@@ -1,11 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { IkoButton } from "../../ikoComponents";
 
 const Product = ({ product }) => {
   return (
     <div className="product">
       <div className="product__img">
-        <img src={product.img} alt="" />
+        <Link to={`/product/${product.id}`}>
+          <img src={product.img} alt="" />
+        </Link>
       </div>
       <div className="product__content">
         <div className="product__title">{product.title}</div>

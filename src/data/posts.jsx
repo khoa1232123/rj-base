@@ -21,7 +21,7 @@ export const posts = [
     title: "How to Reuse Your Favorite TV Series for UX Storytelling",
     img: post01,
     content: `<p>Earlier this week, American beauty brand Sunday Riley was thrust back into the spotlight after the US Federal Trade Commission (FTC) filed a complaint against the company for allegedly creating fake reviews.</p><p>The FTC began investigating the brand after a Reddit post from a former employee surfaced in October 2018 that included alleged screenshots of company emails that showed staff being directed.</p><blockquote class="wp-block-quote"><p>Technology is nothing. What’s important is that you have a faith in people, that they’re basically good and smart, and if you give them tools, they’ll do wonderful things with them</p><cite>Steven Jobs</cite></blockquote><p>Earlier this week, American beauty brand Sunday Riley was thrust back into the spotlight after the US Federal Trade Commission (FTC) filed a complaint against the company for allegedly creating fake reviews.</p>`,
-    postCats: ["CREATIVE"],
+    postCats: ["Creative"],
     author: "John Doe",
   },
   {
@@ -29,7 +29,7 @@ export const posts = [
     title: "Card Sorting: Discover Users’ Perception for Better UX Design",
     img: post02,
     content: `<p>Earlier this week, American beauty brand Sunday Riley was thrust back into the spotlight after the US Federal Trade Commission (FTC) filed a complaint against the company for allegedly creating fake reviews.</p><p>The FTC began investigating the brand after a Reddit post from a former employee surfaced in October 2018 that included alleged screenshots of company emails that showed staff being directed.</p><blockquote class="wp-block-quote"><p>Technology is nothing. What’s important is that you have a faith in people, that they’re basically good and smart, and if you give them tools, they’ll do wonderful things with them</p><cite>Steven Jobs</cite></blockquote><p>Earlier this week, American beauty brand Sunday Riley was thrust back into the spotlight after the US Federal Trade Commission (FTC) filed a complaint against the company for allegedly creating fake reviews.</p>`,
-    postCats: ["CREATIVE"],
+    postCats: ["Creative"],
     author: "John Doe",
   },
   {
@@ -37,7 +37,7 @@ export const posts = [
     title: "Hayley Elsaesser Launches New Collection",
     img: post03,
     content: `<p>Earlier this week, American beauty brand Sunday Riley was thrust back into the spotlight after the US Federal Trade Commission (FTC) filed a complaint against the company for allegedly creating fake reviews.</p><p>The FTC began investigating the brand after a Reddit post from a former employee surfaced in October 2018 that included alleged screenshots of company emails that showed staff being directed.</p><blockquote class="wp-block-quote"><p>Technology is nothing. What’s important is that you have a faith in people, that they’re basically good and smart, and if you give them tools, they’ll do wonderful things with them</p><cite>Steven Jobs</cite></blockquote><p>Earlier this week, American beauty brand Sunday Riley was thrust back into the spotlight after the US Federal Trade Commission (FTC) filed a complaint against the company for allegedly creating fake reviews.</p>`,
-    postCats: ["FASHION"],
+    postCats: ["Fashion"],
     author: "John Doe",
   },
   {
@@ -45,7 +45,7 @@ export const posts = [
     title: "The Best Celebrity Halloween Costumes of 2019",
     img: post04,
     content: `<p>Earlier this week, American beauty brand Sunday Riley was thrust back into the spotlight after the US Federal Trade Commission (FTC) filed a complaint against the company for allegedly creating fake reviews.</p><p>The FTC began investigating the brand after a Reddit post from a former employee surfaced in October 2018 that included alleged screenshots of company emails that showed staff being directed.</p><blockquote class="wp-block-quote"><p>Technology is nothing. What’s important is that you have a faith in people, that they’re basically good and smart, and if you give them tools, they’ll do wonderful things with them</p><cite>Steven Jobs</cite></blockquote><p>Earlier this week, American beauty brand Sunday Riley was thrust back into the spotlight after the US Federal Trade Commission (FTC) filed a complaint against the company for allegedly creating fake reviews.</p>`,
-    postCats: ["BEAUTY"],
+    postCats: ["Beauty"],
     author: "John Doe",
   },
   {
@@ -53,7 +53,7 @@ export const posts = [
     title: "Your First Look at Canada Goose’s New OVO Collection",
     img: post05,
     content: `<p>Earlier this week, American beauty brand Sunday Riley was thrust back into the spotlight after the US Federal Trade Commission (FTC) filed a complaint against the company for allegedly creating fake reviews.</p><p>The FTC began investigating the brand after a Reddit post from a former employee surfaced in October 2018 that included alleged screenshots of company emails that showed staff being directed.</p><blockquote class="wp-block-quote"><p>Technology is nothing. What’s important is that you have a faith in people, that they’re basically good and smart, and if you give them tools, they’ll do wonderful things with them</p><cite>Steven Jobs</cite></blockquote><p>Earlier this week, American beauty brand Sunday Riley was thrust back into the spotlight after the US Federal Trade Commission (FTC) filed a complaint against the company for allegedly creating fake reviews.</p>`,
-    postCats: ["FASHION"],
+    postCats: ["Fashion"],
     author: "John Doe",
   },
   {
@@ -61,7 +61,7 @@ export const posts = [
     title: "Off-White is Now Officially the Hottest Brand in World",
     img: post06,
     content: `<p>Earlier this week, American beauty brand Sunday Riley was thrust back into the spotlight after the US Federal Trade Commission (FTC) filed a complaint against the company for allegedly creating fake reviews.</p><p>The FTC began investigating the brand after a Reddit post from a former employee surfaced in October 2018 that included alleged screenshots of company emails that showed staff being directed.</p><blockquote class="wp-block-quote"><p>Technology is nothing. What’s important is that you have a faith in people, that they’re basically good and smart, and if you give them tools, they’ll do wonderful things with them</p><cite>Steven Jobs</cite></blockquote><p>Earlier this week, American beauty brand Sunday Riley was thrust back into the spotlight after the US Federal Trade Commission (FTC) filed a complaint against the company for allegedly creating fake reviews.</p>`,
-    postCats: ["FASHION"],
+    postCats: ["Fashion"],
     author: "John Doe",
   },
   {
@@ -69,7 +69,7 @@ export const posts = [
     title: "All the Holiday Movies We’ll Be Bingeing on Netflix",
     img: post07,
     content: `<p>Earlier this week, American beauty brand Sunday Riley was thrust back into the spotlight after the US Federal Trade Commission (FTC) filed a complaint against the company for allegedly creating fake reviews.</p><p>The FTC began investigating the brand after a Reddit post from a former employee surfaced in October 2018 that included alleged screenshots of company emails that showed staff being directed.</p><blockquote class="wp-block-quote"><p>Technology is nothing. What’s important is that you have a faith in people, that they’re basically good and smart, and if you give them tools, they’ll do wonderful things with them</p><cite>Steven Jobs</cite></blockquote><p>Earlier this week, American beauty brand Sunday Riley was thrust back into the spotlight after the US Federal Trade Commission (FTC) filed a complaint against the company for allegedly creating fake reviews.</p>`,
-    postCats: ["LIFESTYLE"],
+    postCats: ["Lifestyle"],
     author: "John Doe",
   },
   {
@@ -77,7 +77,7 @@ export const posts = [
     title: "Everything Coming to Crave and Amazon Prime",
     img: post08,
     content: `<p>Earlier this week, American beauty brand Sunday Riley was thrust back into the spotlight after the US Federal Trade Commission (FTC) filed a complaint against the company for allegedly creating fake reviews.</p><p>The FTC began investigating the brand after a Reddit post from a former employee surfaced in October 2018 that included alleged screenshots of company emails that showed staff being directed.</p><blockquote class="wp-block-quote"><p>Technology is nothing. What’s important is that you have a faith in people, that they’re basically good and smart, and if you give them tools, they’ll do wonderful things with them</p><cite>Steven Jobs</cite></blockquote><p>Earlier this week, American beauty brand Sunday Riley was thrust back into the spotlight after the US Federal Trade Commission (FTC) filed a complaint against the company for allegedly creating fake reviews.</p>`,
-    postCats: ["CELEBRITY"],
+    postCats: ["Celebrity"],
     author: "John Doe",
   },
   {
@@ -85,7 +85,7 @@ export const posts = [
     title: "The Best Red Carpet Looks from Governors Awards",
     img: post09,
     content: `<p>Earlier this week, American beauty brand Sunday Riley was thrust back into the spotlight after the US Federal Trade Commission (FTC) filed a complaint against the company for allegedly creating fake reviews.</p><p>The FTC began investigating the brand after a Reddit post from a former employee surfaced in October 2018 that included alleged screenshots of company emails that showed staff being directed.</p><blockquote class="wp-block-quote"><p>Technology is nothing. What’s important is that you have a faith in people, that they’re basically good and smart, and if you give them tools, they’ll do wonderful things with them</p><cite>Steven Jobs</cite></blockquote><p>Earlier this week, American beauty brand Sunday Riley was thrust back into the spotlight after the US Federal Trade Commission (FTC) filed a complaint against the company for allegedly creating fake reviews.</p>`,
-    postCats: ["CULTURE"],
+    postCats: ["Culture"],
     author: "John Doe",
   },
   {
@@ -93,7 +93,7 @@ export const posts = [
     title: "The way to get started is to quit talking and begin doing.",
     img: post10,
     content: `<p>Earlier this week, American beauty brand Sunday Riley was thrust back into the spotlight after the US Federal Trade Commission (FTC) filed a complaint against the company for allegedly creating fake reviews.</p><p>The FTC began investigating the brand after a Reddit post from a former employee surfaced in October 2018 that included alleged screenshots of company emails that showed staff being directed.</p><blockquote class="wp-block-quote"><p>Technology is nothing. What’s important is that you have a faith in people, that they’re basically good and smart, and if you give them tools, they’ll do wonderful things with them</p><cite>Steven Jobs</cite></blockquote><p>Earlier this week, American beauty brand Sunday Riley was thrust back into the spotlight after the US Federal Trade Commission (FTC) filed a complaint against the company for allegedly creating fake reviews.</p>`,
-    postCats: ["DIGITAL", "STRATEGY"],
+    postCats: ["Digital", "Strategy"],
     author: "John Doe",
   },
   {
@@ -101,7 +101,7 @@ export const posts = [
     title: "In order to succeed, we must first believe that we can.",
     img: post11,
     content: `<p>Earlier this week, American beauty brand Sunday Riley was thrust back into the spotlight after the US Federal Trade Commission (FTC) filed a complaint against the company for allegedly creating fake reviews.</p><p>The FTC began investigating the brand after a Reddit post from a former employee surfaced in October 2018 that included alleged screenshots of company emails that showed staff being directed.</p><blockquote class="wp-block-quote"><p>Technology is nothing. What’s important is that you have a faith in people, that they’re basically good and smart, and if you give them tools, they’ll do wonderful things with them</p><cite>Steven Jobs</cite></blockquote><p>Earlier this week, American beauty brand Sunday Riley was thrust back into the spotlight after the US Federal Trade Commission (FTC) filed a complaint against the company for allegedly creating fake reviews.</p>`,
-    postCats: ["DIGITAL"],
+    postCats: ["Digital"],
     author: "John Doe",
   },
   {
@@ -109,7 +109,7 @@ export const posts = [
     title: "Top Racing Fashion Experts Spill Their Secrets!",
     img: post12,
     content: `<p>Earlier this week, American beauty brand Sunday Riley was thrust back into the spotlight after the US Federal Trade Commission (FTC) filed a complaint against the company for allegedly creating fake reviews.</p><p>The FTC began investigating the brand after a Reddit post from a former employee surfaced in October 2018 that included alleged screenshots of company emails that showed staff being directed.</p><blockquote class="wp-block-quote"><p>Technology is nothing. What’s important is that you have a faith in people, that they’re basically good and smart, and if you give them tools, they’ll do wonderful things with them</p><cite>Steven Jobs</cite></blockquote><p>Earlier this week, American beauty brand Sunday Riley was thrust back into the spotlight after the US Federal Trade Commission (FTC) filed a complaint against the company for allegedly creating fake reviews.</p>`,
-    postCats: ["STRATEGY"],
+    postCats: ["Strategy"],
     author: "John Doe",
   },
 
@@ -118,7 +118,7 @@ export const posts = [
     title: "14 Online Business Ideas You Can Start Tomorrow",
     img: post13,
     content: `<p>Earlier this week, American beauty brand Sunday Riley was thrust back into the spotlight after the US Federal Trade Commission (FTC) filed a complaint against the company for allegedly creating fake reviews.</p><p>The FTC began investigating the brand after a Reddit post from a former employee surfaced in October 2018 that included alleged screenshots of company emails that showed staff being directed.</p><blockquote class="wp-block-quote"><p>Technology is nothing. What’s important is that you have a faith in people, that they’re basically good and smart, and if you give them tools, they’ll do wonderful things with them</p><cite>Steven Jobs</cite></blockquote><p>Earlier this week, American beauty brand Sunday Riley was thrust back into the spotlight after the US Federal Trade Commission (FTC) filed a complaint against the company for allegedly creating fake reviews.</p>`,
-    postCats: ["ADVANCED ANALYTICS"],
+    postCats: ["Advanced Analytics"],
     author: "John Doe",
   },
   {
@@ -126,7 +126,7 @@ export const posts = [
     title: "How to Choose the Best Legal Structure for Your Business",
     img: post14,
     content: `<p>Earlier this week, American beauty brand Sunday Riley was thrust back into the spotlight after the US Federal Trade Commission (FTC) filed a complaint against the company for allegedly creating fake reviews.</p><p>The FTC began investigating the brand after a Reddit post from a former employee surfaced in October 2018 that included alleged screenshots of company emails that showed staff being directed.</p><blockquote class="wp-block-quote"><p>Technology is nothing. What’s important is that you have a faith in people, that they’re basically good and smart, and if you give them tools, they’ll do wonderful things with them</p><cite>Steven Jobs</cite></blockquote><p>Earlier this week, American beauty brand Sunday Riley was thrust back into the spotlight after the US Federal Trade Commission (FTC) filed a complaint against the company for allegedly creating fake reviews.</p>`,
-    postCats: ["ADVANCED ANALYTICS"],
+    postCats: ["Advanced Analytics"],
     author: "John Doe",
   },
   {
@@ -134,7 +134,7 @@ export const posts = [
     title: "New Business Idea? How to Test It Before Launching",
     img: post15,
     content: `<p>Earlier this week, American beauty brand Sunday Riley was thrust back into the spotlight after the US Federal Trade Commission (FTC) filed a complaint against the company for allegedly creating fake reviews.</p><p>The FTC began investigating the brand after a Reddit post from a former employee surfaced in October 2018 that included alleged screenshots of company emails that showed staff being directed.</p><blockquote class="wp-block-quote"><p>Technology is nothing. What’s important is that you have a faith in people, that they’re basically good and smart, and if you give them tools, they’ll do wonderful things with them</p><cite>Steven Jobs</cite></blockquote><p>Earlier this week, American beauty brand Sunday Riley was thrust back into the spotlight after the US Federal Trade Commission (FTC) filed a complaint against the company for allegedly creating fake reviews.</p>`,
-    postCats: ["MERGERS & ACCQUISITIONS"],
+    postCats: ["Mergers & Accquisitions"],
     author: "John Doe",
   },
   {
@@ -142,7 +142,7 @@ export const posts = [
     title: "Our Session is Recorded so You Don’t Have to Worry",
     img: post16,
     content: `<p>Earlier this week, American beauty brand Sunday Riley was thrust back into the spotlight after the US Federal Trade Commission (FTC) filed a complaint against the company for allegedly creating fake reviews.</p><p>The FTC began investigating the brand after a Reddit post from a former employee surfaced in October 2018 that included alleged screenshots of company emails that showed staff being directed.</p><blockquote class="wp-block-quote"><p>Technology is nothing. What’s important is that you have a faith in people, that they’re basically good and smart, and if you give them tools, they’ll do wonderful things with them</p><cite>Steven Jobs</cite></blockquote><p>Earlier this week, American beauty brand Sunday Riley was thrust back into the spotlight after the US Federal Trade Commission (FTC) filed a complaint against the company for allegedly creating fake reviews.</p>`,
-    postCats: ["ADVANCED ANALYTICS"],
+    postCats: ["Advanced Analytics"],
     author: "John Doe",
   },
 ];
