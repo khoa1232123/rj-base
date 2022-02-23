@@ -5,6 +5,7 @@ import {
   About,
   BlogDetail,
   Blogs,
+  Cart,
   Contact,
   Home,
   ProductDetail,
@@ -22,6 +23,7 @@ function App() {
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/blogs/:id" element={<BlogDetail />} />
           <Route path="/shop" element={<Shop />} />
+          <Route path="/cart" element={<Cart />} />
           <Route path="/product/:id" element={<ProductDetail />} />
         </Routes>
       </Layout>

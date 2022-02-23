@@ -1,10 +1,28 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { IkoButton, IkoContainer, IkoRow } from "../../ikoComponents";
 
 const Header = () => {
+  const headerRef = useRef(null);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (
+        document.body.scrollTop > 80 ||
+        document.documentElement.scrollTop > 80
+      ) {
+        headerRef.current.classList.add("sticky");
+      } else {
+        headerRef.current.classList.remove("sticky");
+      }
+    });
+    return () => {
+      window.removeEventListener("scroll");
+    };
+  }, []);
+
   return (
-    <header className="header">
+    <header className="header" ref={headerRef}>
       <IkoContainer>
         <IkoRow>
           <div className="header__left">

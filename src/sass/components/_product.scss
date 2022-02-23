@@ -64,28 +64,27 @@
     &__quantity {
       display: flex;
       margin-right: 20px;
+      border: 1px solid;
+      border-radius: 4px;
       * {
         display: inline;
       }
 
-      input {
-        height: 40px;
-        border: 1px solid;
-        border-radius: 4px;
-        margin: 0 10px;
+      &--input {
+        height: 38px;
+        border-width: 0 1px 0 1px;
         width: 60px;
         text-align: center;
+        line-height: 38px;
       }
       &--minus,
       &--plus {
-        height: 40px;
+        height: 38px;
         width: 40px;
-        border: 1px solid;
         display: inline-block;
         font-size: 0px;
         text-align: center;
         line-height: 50px;
-        border-radius: 4px;
         cursor: pointer;
 
         i {

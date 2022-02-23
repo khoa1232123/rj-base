@@ -1,16 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
+import { useDispatch } from "react-redux";
 import { getProductById } from "../data";
-import {
-  IkoButton,
-  IkoCol,
-  IkoInput,
-  IkoRow,
-  IkoTitle,
-} from "../ikoComponents";
+import { IkoButton, IkoCol, IkoRow, IkoTitle } from "../ikoComponents";
+import { addItem } from "../Redux/cart/cartItemsSlice";
 
 const ProductDetailView = ({ productId }) => {
   const { img, title, price, desc, productCats, tags } =
     getProductById(productId);
+
+  const dispatch = useDispatch();
+
+  // const test = useSelector((state) => state.cartItems.value);
+
+  const [quantity, setQuantity] = useState(1);
+
+  const handleQuantity = (type) => {
+    if (type === "increase") {
+      setQuantity(quantity + 1);
+    } else {
+      setQuantity(quantity - 1 <= 0 ? 1 : quantity - 1);
+    }
+  };
+
+  const handleAddToCart = () => {
+    dispatch(
+      addItem({
+        id: productId,
+        quantity: quantity,
+      })
+    );
+  };
+
   return (
     <div className="product-view">
       <IkoRow>
@@ -27,19 +47,26 @@ const ProductDetailView = ({ productId }) => {
             <div className="product-view__price">${price}</div>
             <div className="product-view__form">
               <div className="product-view__form__quantity">
-                <div className="product-view__form__quantity--minus">
+                <div
+                  className="product-view__form__quantity--minus"
+                  onClick={() => handleQuantity("decrease")}
+                >
                   <i className="fas fa-minus"></i>
                 </div>
-                <input
-                  type="number"
-                  defaultValue="1"
-                  className="product-view__form__quantity--input"
-                />
-                <div className="product-view__form__quantity--plus">
+                <div className="product-view__form__quantity--input">
+                  {quantity}
+                </div>
+                <div
+                  className="product-view__form__quantity--plus"
+                  onClick={() => handleQuantity("increase")}
+                >
                   <i className="fas fa-plus"></i>
                 </div>
               </div>
-              <IkoButton className="product-view__form__btn">
+              <IkoButton
+                className="product-view__form__btn"
+                onClick={() => handleAddToCart()}
+              >
                 Add To Cart
               </IkoButton>
             </div>
@@ -60,10 +87,6 @@ const ProductDetailView = ({ productId }) => {
               ))}
             </div>
           </div>
-        </IkoCol>
-      </IkoRow>
-      <IkoRow>
-        <IkoCol>
           <IkoTitle center size={24}>
             Description
           </IkoTitle>
@@ -72,6 +95,9 @@ const ProductDetailView = ({ productId }) => {
             dangerouslySetInnerHTML={{ __html: desc }}
           ></div>
         </IkoCol>
+      </IkoRow>
+      <IkoRow>
+        <IkoCol></IkoCol>
       </IkoRow>
     </div>
   );

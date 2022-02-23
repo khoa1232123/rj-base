@@ -3,10 +3,18 @@ import { Link } from "react-router-dom";
 import { IkoButton } from "../../ikoComponents";
 
 const Product = ({ product }) => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // for smoothly scrolling
+    });
+    return true;
+  };
+
   return (
     <div className="product">
       <div className="product__img">
-        <Link to={`/product/${product.id}`}>
+        <Link to={`/product/${product.id}`} onClick={() => scrollToTop()}>
           <img src={product.img} alt="" />
         </Link>
       </div>
