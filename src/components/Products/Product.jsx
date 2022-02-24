@@ -1,12 +1,15 @@
 import React from "react";
+import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { IkoButton } from "../../ikoComponents";
+import { addItem } from "../../Redux/cart/cartItemsSlice";
 
 const Product = ({ product }) => {
+  const dispatch = useDispatch();
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth", // for smoothly scrolling
+      behavior: "smooth",
     });
     return true;
   };
@@ -28,6 +31,14 @@ const Product = ({ product }) => {
               outline
               borderColor={"white"}
               style={{ padding: 0 }}
+              onClick={() =>
+                dispatch(
+                  addItem({
+                    id: product.id,
+                    quantity: 1,
+                  })
+                )
+              }
             >
               Add To Cart
             </IkoButton>

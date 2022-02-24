@@ -8,9 +8,26 @@
   background-color: var(--white);
   top: 0;
   width: 100%;
+  transition: 300ms;
+
+  &.sticky {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+
+    .container {
+      height: var(--header-sticky-height);
+    }
+
+    .header__logo .logo {
+      font-size: 40px;
+    }
+    .header__menu__item a {
+      padding: 14px 20px;
+    }
+  }
 
   .container {
     height: var(--header-height);
+    transition: 300ms;
   }
 
   .iko-row {
@@ -26,6 +43,7 @@
       background: -webkit-linear-gradient(var(--blue-color), rgb(10, 145, 255));
       background-clip: text;
       -webkit-text-fill-color: transparent;
+      transition: 300ms;
     }
   }
 
@@ -50,7 +68,25 @@
     }
   }
 
-  &__darkmode {
+  &__darkmode,
+  &__cart {
     padding-left: 30px;
+  }
+
+  &__cart {
+    position: relative;
+    &__items {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      line-height: 20px;
+      background: var(--dark);
+      color: var(--light);
+      font-size: 12px;
+      border-radius: 50%;
+    }
   }
 }

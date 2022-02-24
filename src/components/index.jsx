@@ -11,3 +11,4 @@ export { default as Brands } from "./Brands";
 export { default as Products } from "./Products";
 export { default as Posts } from "./Posts";
 export { default as TitleHead } from "./TitleHead";
+export { default as CartItems } from "./CartItems";

@@ -1,5 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import { CartItems } from "../components";
+import { getProductById } from "../data";
 import {
   IkoButton,
   IkoCol,
@@ -9,9 +11,14 @@ import {
 } from "../ikoComponents";
 
 const Cart = () => {
-  const cartItems = useSelector((state) => state.cartItems.value);
+  const cartItems = useSelector((state) => state.cartItems.items);
 
-  console.log(cartItems);
+  const totalItems = cartItems.reduce((a, b) => a + b.quantity, 0);
+
+  const totalPrice = cartItems.reduce((a, b) => {
+    const { price } = getProductById(b.id);
+    return a + b.quantity * price;
+  }, 0);
 
   return (
     <IkoContainer className="cart">
@@ -23,15 +30,21 @@ const Cart = () => {
         </IkoCol>
       </IkoRow>
       <IkoRow>
-        <IkoCol col={7}></IkoCol>
+        <IkoCol col={7}>
+          <div className="cart__list">
+            {cartItems.map((item, index) => (
+              <CartItems key={index} item={item} />
+            ))}
+          </div>
+        </IkoCol>
         <IkoCol col={5}>
           <div className="cart__info">
             <div className="cart__txt">
-              Bạn đang có {} sản phẩm trong giỏ hàng
+              You have {totalItems} products in your cart
             </div>
             <div className="cart__subtotal">
-              <div className="cart__subtotal__txt">Price:</div>
-              <div className="cart__subtotal__price">13</div>
+              <div className="cart__subtotal__txt">Total Price:</div>
+              <div className="cart__subtotal__price">${totalPrice}</div>
             </div>
             <IkoButton block style={{ marginBottom: 20 }}>
               Check Out

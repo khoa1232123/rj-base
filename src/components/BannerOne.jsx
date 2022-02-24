@@ -1,9 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { IkoButton, IkoCol, IkoContainer, IkoRow } from "../ikoComponents";
 import banner01 from "../imgs/banner-01.png";
 import banner02 from "../imgs/banner-02.png";
 
 const BannerOne = () => {
+  const navigate = useNavigate();
   return (
     <div className="banner-one">
       <IkoContainer>
@@ -21,6 +23,7 @@ const BannerOne = () => {
                     icon="fa-solid fa-paw"
                     bgColor="red"
                     className="banner__btn"
+                    onClick={() => navigate("/shop")}
                   >
                     Shop Now
                   </IkoButton>
@@ -41,6 +44,7 @@ const BannerOne = () => {
                     icon="fa-solid fa-paw"
                     bgColor="green"
                     className="banner__btn"
+                    onClick={() => navigate("/shop")}
                   >
                     Shop Now
                   </IkoButton>

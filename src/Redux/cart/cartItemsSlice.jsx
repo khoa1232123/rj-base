@@ -4,7 +4,7 @@ const items =
     ? JSON.parse(localStorage.getItem("cartItems"))
     : [];
 
-const initialState = { value: items };
+const initialState = { items: items };
 
 console.log(items);
 
@@ -15,16 +15,15 @@ export const cartItemsSlice = createSlice({
     addItem: (state, action) => {
       const newItem = action.payload;
 
-      const duplicate = findItem(state.value, newItem);
+      const duplicate = findItem(state.items, newItem);
 
-      console.log({ newItem, duplicate, value: state.value });
+      console.log({ newItem, duplicate, value: state.items });
 
       if (duplicate.length > 0) {
-        console.log("abc");
-        state.value = delItem(state.value, newItem);
+        state.items = delItem(state.items, newItem);
 
-        state.value = [
-          ...state.value,
+        state.items = [
+          ...state.items,
           {
             ...newItem,
             id: duplicate[0].id,
@@ -33,8 +32,8 @@ export const cartItemsSlice = createSlice({
         ];
       } else {
         console.log("def");
-        state.value = [
-          ...state.value,
+        state.items = [
+          ...state.items,
           {
             ...newItem,
             id: newItem.id,
@@ -42,19 +41,19 @@ export const cartItemsSlice = createSlice({
         ];
       }
 
-      localStorage.setItem("cartItems", JSON.stringify(sortItems(state.value)));
+      localStorage.setItem("cartItems", JSON.stringify(sortItems(state.items)));
     },
 
     updateItem: (state, action) => {
       const itemUpdate = action.payload;
 
-      const item = findItem(state.value, itemUpdate);
+      const item = findItem(state.items, itemUpdate);
 
       if (item.length > 0) {
-        state.value = delItem(state.value, itemUpdate);
+        state.items = delItem(state.items, itemUpdate);
 
-        state.value = [
-          ...state.value,
+        state.items = [
+          ...state.items,
           {
             ...itemUpdate,
             id: item[0].id,
@@ -63,15 +62,15 @@ export const cartItemsSlice = createSlice({
 
         localStorage.setItem(
           "cartItems",
-          JSON.stringify(sortItems(state.value))
+          JSON.stringify(sortItems(state.items))
         );
       }
     },
 
     removeItem: (state, action) => {
       const item = action.payload;
-      state.value = delItem(state.value, item);
-      localStorage.setItem("cartItems", JSON.stringify(sortItems(state.value)));
+      state.items = delItem(state.items, item);
+      localStorage.setItem("cartItems", JSON.stringify(sortItems(state.items)));
     },
   },
 });

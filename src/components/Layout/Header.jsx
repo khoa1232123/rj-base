@@ -1,9 +1,16 @@
 import React, { useEffect, useRef } from "react";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { IkoButton, IkoContainer, IkoRow } from "../../ikoComponents";
+import { useNavigate } from "react-router-dom";
+import { IkoButton, IkoCol, IkoContainer, IkoRow } from "../../ikoComponents";
 
 const Header = () => {
+  const cartItems = useSelector((state) => state.cartItems.items);
+
+  const totalItems = cartItems.reduce((a, b) => a + b.quantity, 0);
+
   const headerRef = useRef(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -17,7 +24,7 @@ const Header = () => {
       }
     });
     return () => {
-      window.removeEventListener("scroll");
+      window.removeEventListener("scroll", null);
     };
   }, []);
 
@@ -25,14 +32,14 @@ const Header = () => {
     <header className="header" ref={headerRef}>
       <IkoContainer>
         <IkoRow>
-          <div className="header__left">
+          <IkoCol col={3} className="header__left">
             <div className="header__logo">
               <Link to="/" className="logo">
                 iKo
               </Link>
             </div>
-          </div>
-          <div className="header__center">
+          </IkoCol>
+          <IkoCol col={6}>
             <ul className="header__menu">
               <li className="header__menu__item">
                 <Link to="/">Home</Link>
@@ -50,17 +57,24 @@ const Header = () => {
                 <Link to="/about">About</Link>
               </li>
             </ul>
-          </div>
-          <div className="header__right">
+          </IkoCol>
+          <IkoCol col={3} className="header__right">
             <div className="header__search">
               <i className="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div className="header__cart">
+              <IkoButton outline onClick={() => navigate("/cart")}>
+                <i className="fas fa-shopping-basket"></i>
+                <span className="header__cart__items">{totalItems}</span>
+              </IkoButton>
             </div>
             <div className="header__darkmode">
               <IkoButton outline>
                 <i className="fa-solid fa-lightbulb"></i>
               </IkoButton>
             </div>
-          </div>
+          </IkoCol>
         </IkoRow>
       </IkoContainer>
     </header>
