@@ -12,3 +12,5 @@ export { default as Products } from "./Products";
 export { default as Posts } from "./Posts";
 export { default as TitleHead } from "./TitleHead";
 export { default as CartItems } from "./CartItems";
+export { default as InfinityList } from "./InfinityList";
+export { default as ProductModal } from "./ProductModal";

@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux";
 import { getProductById } from "../data";
 import { IkoButton, IkoCol, IkoRow, IkoTitle } from "../ikoComponents";
 import { addItem } from "../Redux/cart/cartItemsSlice";
+import { remove } from "../Redux/product-modal/productModalSlice";
 
 const ProductDetailView = ({ productId }) => {
   const { img, title, price, desc, productCats, tags } =
@@ -29,6 +30,7 @@ const ProductDetailView = ({ productId }) => {
         quantity: quantity,
       })
     );
+    dispatch(remove());
   };
 
   return (

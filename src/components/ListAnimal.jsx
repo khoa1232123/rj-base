@@ -8,7 +8,7 @@ const ListAnimal = () => {
       <IkoContainer>
         <IkoRow>
           {animals.map((animal, index) => (
-            <IkoCol key={index}>
+            <IkoCol key={index} mdCol={4} smCol={6}>
               <div className="list-animal__item">
                 <div className="list-animal__img">
                   <img src={animal.img} alt="" />

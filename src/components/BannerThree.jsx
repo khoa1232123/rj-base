@@ -7,7 +7,7 @@ const BannerThree = () => {
     <div className="banner-three">
       <IkoContainer>
         <IkoRow>
-          <IkoCol col={6}>
+          <IkoCol col={6} smCol={12}>
             <div className="banner">
               <div className="banner__wrapper">
                 <div className="banner__content">
@@ -21,7 +21,7 @@ const BannerThree = () => {
                   </div>
                   <IkoRow className="banner__list">
                     {services.map((item, index) => (
-                      <IkoCol key={index}>
+                      <IkoCol key={index} mdCol={6} smCol={6}>
                         <div className="banner__list__item">
                           <div className="banner__list__item__img">
                             <img src={item.img} alt="" />
@@ -44,7 +44,7 @@ const BannerThree = () => {
               </div>
             </div>
           </IkoCol>
-          <IkoCol col={6}>
+          <IkoCol col={6} smCol={12}>
             <div className="banner">
               <div className="banner__wrapper">
                 <div className="banner__img">

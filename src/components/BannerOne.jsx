@@ -10,7 +10,7 @@ const BannerOne = () => {
     <div className="banner-one">
       <IkoContainer>
         <IkoRow>
-          <IkoCol col={6}>
+          <IkoCol col={6} smCol={12}>
             <div className="banner">
               <div className="banner__wrapper">
                 <div className="banner__img">
@@ -31,7 +31,7 @@ const BannerOne = () => {
               </div>
             </div>
           </IkoCol>
-          <IkoCol col={6}>
+          <IkoCol col={6} smCol={12}>
             <div className="banner">
               <div className="banner__wrapper">
                 <div className="banner__img">

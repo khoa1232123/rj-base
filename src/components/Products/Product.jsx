@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { IkoButton } from "../../ikoComponents";
 import { addItem } from "../../Redux/cart/cartItemsSlice";
+import { set } from "../../Redux/product-modal/productModalSlice";
 
 const Product = ({ product }) => {
   const dispatch = useDispatch();
@@ -29,8 +30,8 @@ const Product = ({ product }) => {
             <IkoButton
               bgColor="green"
               outline
-              borderColor={"white"}
-              style={{ padding: 0 }}
+              color="blue"
+              size="md"
               onClick={() =>
                 dispatch(
                   addItem({
@@ -41,6 +42,16 @@ const Product = ({ product }) => {
               }
             >
               Add To Cart
+            </IkoButton>
+          </div>
+          <div className="product__quickview">
+            <IkoButton
+              outline
+              onClick={() => dispatch(set(product.id))}
+              size="md"
+              color="orange"
+            >
+              <i className="far fa-eye"></i>
             </IkoButton>
           </div>
         </div>

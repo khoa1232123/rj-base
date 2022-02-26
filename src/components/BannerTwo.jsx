@@ -8,7 +8,7 @@ const BannerTwo = () => {
     <div className="banner-two" style={{ backgroundImage: `url(${bgBanner})` }}>
       <IkoContainer>
         <IkoRow>
-          <IkoCol col={7}>
+          <IkoCol col={7} smCol={12}>
             <div className="banner">
               <div className="banner__wrapper">
                 <div className="banner__content">
@@ -27,7 +27,7 @@ const BannerTwo = () => {
               </div>
             </div>
           </IkoCol>
-          <IkoCol col={5}>
+          <IkoCol col={5} smCol={12}>
             <div className="banner">
               <div className="banner__wrapper">
                 <div className="banner__img">

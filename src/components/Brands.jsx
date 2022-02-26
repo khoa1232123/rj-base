@@ -17,7 +17,7 @@ const Brands = () => {
         </IkoRow>
         <IkoRow className="brands__list">
           {brands.map((item, index) => (
-            <IkoCol col={2} key={index}>
+            <IkoCol col={2} mdCol={3} smCol={4} key={index}>
               <div className="brands__item">
                 <img src={item} alt="" />
               </div>

@@ -30,14 +30,14 @@ const Cart = () => {
         </IkoCol>
       </IkoRow>
       <IkoRow>
-        <IkoCol col={7}>
+        <IkoCol col={7} smCol={12}>
           <div className="cart__list">
             {cartItems.map((item, index) => (
               <CartItems key={index} item={item} />
             ))}
           </div>
         </IkoCol>
-        <IkoCol col={5}>
+        <IkoCol col={5} smCol={12}>
           <div className="cart__info">
             <div className="cart__txt">
               You have {totalItems} products in your cart

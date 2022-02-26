@@ -15,7 +15,7 @@ const Footer = () => {
       </div>
       <IkoContainer fluid className="footer__wrapper">
         <IkoRow>
-          <IkoCol col={3}>
+          <IkoCol col={3} mdCol={6} smCol={12}>
             <div className="footer__logo">
               <Link to="/" className="logo">
                 iKo
@@ -34,7 +34,7 @@ const Footer = () => {
               </p>
             </div>
           </IkoCol>
-          <IkoCol col={3}>
+          <IkoCol col={3} mdCol={6} smCol={12}>
             <div className="footer__menu">
               <div className="footer__menu__item">
                 <Link to="/">Help & Support</Link>
@@ -50,7 +50,7 @@ const Footer = () => {
               </div>
             </div>
           </IkoCol>
-          <IkoCol col={3}>
+          <IkoCol col={3} mdCol={6} smCol={12}>
             <div className="footer__menu">
               <div className="footer__menu__item">
                 <Link to="/">About</Link>
@@ -66,7 +66,7 @@ const Footer = () => {
               </div>
             </div>
           </IkoCol>
-          <IkoCol col={3}>
+          <IkoCol col={3} mdCol={6} smCol={12}>
             <div className="footer__menu">
               <div className="footer__menu__item">
                 <Link to="/">Facebook</Link>
@@ -88,7 +88,7 @@ const Footer = () => {
         <IkoRow>
           <IkoCol>
             <div className="footer__copyright__txt">
-              © Copyright 2022 by iKo (Khoi dep trai)
+              Copyright © 2022 by Nguyễn Đình Khôi. All rights reserved
             </div>
           </IkoCol>
         </IkoRow>

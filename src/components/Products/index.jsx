@@ -2,12 +2,17 @@ import React from "react";
 import { IkoCol, IkoRow } from "../../ikoComponents";
 import Product from "./Product";
 
-const Products = ({ products, col }) => {
+const Products = ({ products, col, mdCol, smCol }) => {
   return (
     <IkoRow className="products">
       {products &&
         products.map((item, index) => (
-          <IkoCol key={index} col={col ? col : 3}>
+          <IkoCol
+            key={index}
+            col={col ? col : 3}
+            mdCol={mdCol ? mdCol : 4}
+            smCol={smCol ? smCol : 6}
+          >
             <Product product={item} />
           </IkoCol>
         ))}
@@ -16,3 +21,4 @@ const Products = ({ products, col }) => {
 };
 
 export default Products;
+export { Product };

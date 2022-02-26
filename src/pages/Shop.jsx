@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useState } from "react";
-import { Products } from "../components";
+import { InfinityList } from "../components";
 import { filterProductCats, filterProductTags, getAllProducts } from "../data";
 import {
   IkoButton,
@@ -93,7 +93,7 @@ const Shop = () => {
   };
 
   return (
-    <IkoContainer>
+    <IkoContainer style={{ marginTop: 60 }}>
       <IkoRow>
         <IkoCol col={3}>
           <div className="products__filter__widget">
@@ -136,7 +136,7 @@ const Shop = () => {
           <IkoButton onClick={() => clearFilter()}>Clear</IkoButton>
         </IkoCol>
         <IkoCol col={9}>
-          <Products products={productFilter} col={6} />
+          <InfinityList data={productFilter} />
         </IkoCol>
       </IkoRow>
     </IkoContainer>
