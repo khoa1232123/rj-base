@@ -1,5 +1,8 @@
 .post {
-  margin-bottom: 20px;
+  border: 1px solid var(--light-gray);
+  padding: 10px;
+  border-radius: 4px;
+  height: 100%;
 
   &__img {
     margin-bottom: 15px;
@@ -21,6 +24,12 @@
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 15px;
+  }
+}
+
+.post-list {
+  > .iko-row > * {
+    margin-bottom: 20px;
   }
 }
 

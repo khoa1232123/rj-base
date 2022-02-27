@@ -30,6 +30,11 @@ ul {
 a {
   text-decoration: none;
   color: unset;
+  transition: 300ms;
+
+  &:hover {
+    color: var(--blue);
+  }
 }
 
 .darkmode {

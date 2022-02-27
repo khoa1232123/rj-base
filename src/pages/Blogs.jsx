@@ -17,6 +17,8 @@ const Blogs = () => {
     category: [],
   };
 
+  const [sidebarFilter, setSidebarFilter] = useState(false);
+
   const [filter, setFilter] = useState(initFilter);
 
   const filterSelect = (type, checked, item) => {
@@ -73,8 +75,28 @@ const Blogs = () => {
       <TitleHead title="Blogs" />
       <IkoContainer>
         <IkoRow>
-          <IkoCol col={3}>
-            <div className="products__filter__widget">
+          <IkoCol col={3} mdCol={12}>
+            <IkoButton
+              icon="fas fa-filter"
+              outline
+              onClick={() => setSidebarFilter(true)}
+              color={"green"}
+              className="mobile"
+              style={{ marginBottom: 20 }}
+            >
+              Filter
+            </IkoButton>
+            <div
+              className={`products__filter__widget ${
+                sidebarFilter ? "active" : ""
+              }`}
+            >
+              <div
+                className="products__filter__widget__close mobile"
+                onClick={() => setSidebarFilter(false)}
+              >
+                <i className="fas fa-times"></i>
+              </div>
               <IkoTitle size={24}>Post Categories</IkoTitle>
               <div className="products__filter__widget__content">
                 {filterPostCats.map((item, index) => (
@@ -92,10 +114,10 @@ const Blogs = () => {
                   </p>
                 ))}
               </div>
+              <IkoButton onClick={() => clearFilter()}>Clear</IkoButton>
             </div>
-            <IkoButton onClick={() => clearFilter()}>Clear</IkoButton>
           </IkoCol>
-          <IkoCol col={9}>
+          <IkoCol col={9} mdCol={12} className="post-list">
             <Posts posts={postFilter} col={6} />
           </IkoCol>
         </IkoRow>

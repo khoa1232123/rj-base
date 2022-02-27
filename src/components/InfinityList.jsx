@@ -51,7 +51,7 @@ const InfinityList = ({ data }) => {
     <div ref={listRef}>
       <IkoRow>
         {listData.map((item, index) => (
-          <IkoCol key={index} col={4} mdCol={6} smCol={12}>
+          <IkoCol key={index} col={4} mdCol={4} smCol={6}>
             <Product product={item} />
           </IkoCol>
         ))}

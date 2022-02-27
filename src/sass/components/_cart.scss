@@ -30,6 +30,12 @@
   &__list {
     .cart-item {
       border-bottom: 1px solid var(--gray);
+      padding-top: 5px;
+      padding-bottom: 5px;
+
+      &:last-child {
+        border-bottom: 0px;
+      }
     }
   }
 

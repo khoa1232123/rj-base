@@ -31,12 +31,12 @@ const Contact = () => {
           </IkoCol>
         </IkoRow>
         <IkoRow>
-          <IkoCol col={5}>
+          <IkoCol col={5} smCol={12}>
             <IkoTitle size={24} tag="h3">
               Infomation
             </IkoTitle>
           </IkoCol>
-          <IkoCol col={7}>
+          <IkoCol col={7} smCol={12}>
             <div className="contact__txt">
               <p>
                 A great About Us page helps builds trust between you and your
@@ -60,12 +60,12 @@ const Contact = () => {
           </IkoCol>
         </IkoRow>
         <IkoRow>
-          <IkoCol col={5}>
+          <IkoCol col={5} smCol={12}>
             <IkoTitle size={24} tag="h3">
               Infomation
             </IkoTitle>
           </IkoCol>
-          <IkoCol col={7}>
+          <IkoCol col={7} smCol={12}>
             <div className="contact__form">
               <IkoInput placeholder="Name *" />
               <IkoInput placeholder="Email *" />

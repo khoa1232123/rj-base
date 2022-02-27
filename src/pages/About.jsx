@@ -33,10 +33,9 @@ const About = () => {
                   </IkoTitle>
                   <div className="about__txt">
                     <p>
-                      A great About Us page helps builds trust between you and
-                      your customers. The more content you provide about you and
-                      your business, the more confident people willz be when
-                      purchasing from your store.
+                      {
+                        "iKo là gì? Khôi -> Khoi -> Koi -> iKo, vậy iKo là viết tắt tên của tôi đó, haha"
+                      }
                     </p>
                   </div>
                 </IkoCol>

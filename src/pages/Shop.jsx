@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useState } from "react";
-import { InfinityList } from "../components";
+import { InfinityList, TitleHead } from "../components";
 import { filterProductCats, filterProductTags, getAllProducts } from "../data";
 import {
   IkoButton,
@@ -17,6 +17,8 @@ const Shop = () => {
     category: [],
     tag: [],
   };
+
+  const [sidebarFilter, setSidebarFilter] = useState(false);
 
   const [filter, setFilter] = useState(initFilter);
 
@@ -94,9 +96,29 @@ const Shop = () => {
 
   return (
     <IkoContainer style={{ marginTop: 60 }}>
+      <TitleHead title={"Shop"} />
       <IkoRow>
-        <IkoCol col={3}>
-          <div className="products__filter__widget">
+        <IkoCol col={3} mdCol={12}>
+          <IkoButton
+            icon="fas fa-filter"
+            outline
+            onClick={() => setSidebarFilter(true)}
+            color={"green"}
+            className="mobile"
+          >
+            Filter
+          </IkoButton>
+          <div
+            className={`products__filter__widget ${
+              sidebarFilter ? "active" : ""
+            }`}
+          >
+            <div
+              className="products__filter__widget__close mobile"
+              onClick={() => setSidebarFilter(false)}
+            >
+              <i className="fas fa-times"></i>
+            </div>
             <IkoTitle size={24}>Product Categories</IkoTitle>
             <div className="products__filter__widget__content">
               {filterProductCats.map((item, index) => (
@@ -132,10 +154,10 @@ const Shop = () => {
                 </p>
               ))}
             </div>
+            <IkoButton onClick={() => clearFilter()}>Clear</IkoButton>
           </div>
-          <IkoButton onClick={() => clearFilter()}>Clear</IkoButton>
         </IkoCol>
-        <IkoCol col={9}>
+        <IkoCol col={9} mdCol={12}>
           <InfinityList data={productFilter} />
         </IkoCol>
       </IkoRow>
