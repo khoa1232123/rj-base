@@ -6,8 +6,10 @@ import {
   BlogDetail,
   Blogs,
   Cart,
+  Checkout,
   Contact,
   Home,
+  Order,
   ProductDetail,
   Shop,
 } from "./pages";
@@ -25,6 +27,8 @@ function App() {
           <Route path="/blogs/:id" element={<BlogDetail />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/order" element={<Order />} />
           <Route path="/product/:id" element={<ProductDetail />} />
         </Routes>
       </Layout>

@@ -11,8 +11,6 @@ const ProductDetailView = ({ productId }) => {
 
   const dispatch = useDispatch();
 
-  // const test = useSelector((state) => state.cartItems.value);
-
   const [quantity, setQuantity] = useState(1);
 
   const handleQuantity = (type) => {

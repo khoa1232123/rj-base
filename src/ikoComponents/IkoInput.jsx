@@ -14,6 +14,7 @@ const IkoInput = ({
   labelColor,
   defaultValue,
   labelEffect,
+  onChange,
   ...props
 }) => {
   let classTxt = "iko-input";
@@ -57,6 +58,7 @@ const IkoInput = ({
         placeholder={labelEffect ? " " : placeholder}
         defaultValue={defaultValue}
         className={classInputTxt}
+        onChange={onChange}
         {...props}
       />
       {label && labelEffect ? (
@@ -81,6 +83,7 @@ IkoInput.propTypes = {
   labelColor: PropTypes.string,
   defaultValue: PropTypes.string,
   labelEffect: PropTypes.bool,
+  onChange: PropTypes.func,
 };
 
 export default IkoInput;

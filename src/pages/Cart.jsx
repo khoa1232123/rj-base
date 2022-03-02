@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import { CartItems } from "../components";
 import { getProductById } from "../data";
 import {
@@ -11,6 +12,7 @@ import {
 } from "../ikoComponents";
 
 const Cart = () => {
+  const navigate = useNavigate();
   const cartItems = useSelector((state) => state.cartItems.items);
 
   const totalItems = cartItems.reduce((a, b) => a + b.quantity, 0);
@@ -46,7 +48,11 @@ const Cart = () => {
               <div className="cart__subtotal__txt">Total Price:</div>
               <div className="cart__subtotal__price">${totalPrice}</div>
             </div>
-            <IkoButton block style={{ marginBottom: 20 }}>
+            <IkoButton
+              block
+              style={{ marginBottom: 20 }}
+              onClick={() => navigate("/checkout")}
+            >
               Check Out
             </IkoButton>
             <IkoButton block>Continue shopping</IkoButton>
