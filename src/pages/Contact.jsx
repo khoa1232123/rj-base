@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { TitleHead } from "../components";
 import {
   IkoButton,
@@ -82,4 +82,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default memo(Contact);

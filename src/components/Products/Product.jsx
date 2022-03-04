@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { IkoButton } from "../../ikoComponents";
@@ -60,4 +60,4 @@ const Product = ({ product }) => {
   );
 };
 
-export default Product;
+export default memo(Product);

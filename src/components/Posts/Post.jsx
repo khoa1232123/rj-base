@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { Link } from "react-router-dom";
 
 const Post = ({ post }) => {
@@ -28,4 +28,4 @@ const Post = ({ post }) => {
   );
 };
 
-export default Post;
+export default memo(Post);

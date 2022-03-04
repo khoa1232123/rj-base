@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { memo, useEffect, useRef, useState } from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
@@ -29,6 +29,8 @@ const Header = ({ darkmode, setDarkmode }) => {
       window.removeEventListener("scroll", null);
     };
   }, []);
+
+  console.log("abc header");
 
   return (
     <header className="header" ref={headerRef}>
@@ -128,4 +130,4 @@ const Header = ({ darkmode, setDarkmode }) => {
   );
 };
 
-export default Header;
+export default memo(Header);

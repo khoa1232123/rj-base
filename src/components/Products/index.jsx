@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { IkoCol, IkoRow } from "../../ikoComponents";
 import Product from "./Product";
 
@@ -20,5 +20,5 @@ const Products = ({ products, col, mdCol, smCol }) => {
   );
 };
 
-export default Products;
+export default memo(Products);
 export { Product };

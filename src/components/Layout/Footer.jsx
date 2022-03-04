@@ -1,10 +1,12 @@
-import React from "react";
+import React, { memo } from "react";
 import { Link } from "react-router-dom";
 import { IkoCol, IkoContainer, IkoRow } from "../../ikoComponents";
 import background from "../../imgs/h11-footer-bg.png";
 import footerImage from "../../imgs/h11-bottom-footer-bg.png";
 
 const Footer = () => {
+  console.log("abc footer");
+
   return (
     <footer
       className="footer"
@@ -97,4 +99,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default memo(Footer);
